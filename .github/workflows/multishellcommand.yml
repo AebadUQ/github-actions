@@ -1,0 +1,10 @@
+name: Multiple Shell Command
+on: workflow_dispatch
+jobs:
+  first-job:
+  runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello and Bye
+        run: |
+          echo "Hello"
+          echo "Bye"
